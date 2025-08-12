@@ -435,7 +435,7 @@ See you later👋""")
                     print("Press (Y/y) to confirm or (N/n) to generate again")
                     while True:
                         dec16=input("\nEnter your decision: ").lower()
-                        if dec17 not in ["y","n"]:
+                        if dec16 not in ["y","n"]:
                             print("Ohh invalid input, please enter 'y' or 'n' according to your needs")
                         else:
                             break
