@@ -146,6 +146,81 @@ Press '2' to generate a song from a specific language""")
                         print("\nThe lyrics of the selected song is: ")
                         slyrics=slyrics_generation_1(sname)
                         print(slyrics)
+                        print("\nIs this song fine?")
+                        print("Press (Y/y) to confirm or (N/n) to generate again")
+                        while True:
+                            dec_2=input("\nEnter your decision: ").lower()
+                            if dec_2 not in ["y","n"]:
+                                print("Ohh invalid input, please enter 'y' or 'n' according to your needs")
+                            else:
+                                break
+
+
+                        if dec_2=="y":
+                            #Copy to Clipboard
+                            print("\nDo you want the lyrics to be copied to your clipboard?")
+                            print("Press (Y/y) to continue or (N/n) to exit the program")
+                            while True:
+                                decision_1=input("\nEnter your decision: ").lower()
+                                if decision_1 not in ["y","n"]:
+                                    print("Ohh invalid input, please enter 'y' or 'n' according to your needs")
+                                else:
+                                    break
+                            if decision_1=="y":
+                                slyrics_copy(slyrics)
+                                print("Thank You for using the program😊")
+                                break
+                            elif decision_1=="n":
+                                print(""""\nExiting the program
+See you later👋""")
+                                break                    
+                        elif dec=="n":
+                            print("""\nExiting the program
+See you later👋""")
+                            break
+
+
+                        elif dec_2=="n":
+                            print("\nOkay Great!! Would you like the program to choose another song for you?")
+                            print("Press (Y/y) to continue or (N/n) to not continue")
+                            while True:
+                                dec_3=input("\nEnter your decision: ").lower()
+                                if dec_3 not in ["y","n"]:
+                                    print("Ohh invalid input, please enter 'y' or 'n' according to your needs")
+                                else:
+                                    break
+                            if dec_3=="y":
+                                print("\nSelected song name is: ",sname)
+                                print("\nIs this song fine?")
+                                print("Press (Y/y) to confirm or (N/n) to generate again")
+                                while True:
+                                    dec_4=input("\nEnter your decision: ").lower()
+                                    if dec_4 not in ["y","n"]:
+                                        print("Ohh invalid input, please enter 'y' or 'n' according to your needs")
+                                    else:
+                                        break
+                                if dec_4=="y":
+                                    print("\nWould you like to have its lyrics as well?")
+                                    print("Press (Y/y) to continue")
+                                    while True:
+                                        dec_5=input("\nEnter your decision: ").lower()
+                                        if dec_5 not in ["y"]:
+                                            print("Ohh invalid input, please enter 'y'")
+                                        else:
+                                            break
+                                    if dec_5=="y":
+                                        print("\nThe lyrics of the selected song is: ")
+                                        slyrics=slyrics_generation_1(sname)
+                                        print(slyrics)
+                                elif dec_4=="n":
+                                    continue
+                            elif dec_3=="n":
+                                print("""Okay Great!!
+Exiting the program
+See you later👋""")
+                                break
+
+
                     elif dec2=="n":
                         print("\nOkay Great!! Would you like the program to choose another song for you?")
                         print("Press (Y/y) to continue or (N/n) to not continue")
@@ -260,6 +335,78 @@ See you later👋""")
                             print("\nThe lyrics of the selected song is: ")
                             slyrics_eng=slyrics_generation_2_eng(sname_eng)
                             print(slyrics_eng)
+                            print("\nIs this song fine?")
+                            print("Press (Y/y) to confirm or (N/n) to generate again")
+                            while True:
+                                dec_8=input("\nEnter your decision: ").lower()
+                                if dec_8 not in ["y","n"]:
+                                    print("Ohh invalid input, please enter 'y' or 'n' according to your needs")
+                                else:
+                                    break
+
+
+                        if dec_8=="y":
+                            #Copy to Clipboard(English)
+                            print("\nDo you want the lyrics to be copied to your clipboard?")
+                            print("Press (Y/y) to continue or (N/n) to exit the program")
+                            while True:
+                                decision_1=input("\nEnter your decision: ").lower()
+                                if decision_1 not in ["y","n"]:
+                                    print("Ohh invalid input, please enter 'y' or 'n' according to your needs")
+                                else:
+                                    break
+                            if decision_1=="y":
+                                slyrics_eng_copy(slyrics_eng)
+                                print("Thank You for using the program😊")
+                                break
+                            elif decision_1=="n":
+                                print(""""\nExiting the program
+See you later👋""")
+                                break
+                        elif dec7=="n":
+                            continue
+
+                        elif dec_8=="n":
+                            print("\nOkay Great!! Would you like the program to choose another song for you?")
+                            print("Press (Y/y) to continue or (N/n) to not continue")
+                            while True:
+                                dec_9=input("\nEnter your decision: ").lower()
+                                if dec_9 not in ["y","n"]:
+                                    print("Ohh invalid input, please enter 'y' or 'n' according to your needs")
+                                else:
+                                    break
+                            if dec_9=="y":
+                                print("\nSelected song name is: ",sname_eng)
+                                print("\nIs this song fine?")
+                                print("Press (Y/y) to confirm or (N/n) to generate again")
+                                while True:
+                                    dec_10=input("\nEnter your decision: ").lower()
+                                    if dec_10 not in ["y","n"]:
+                                        print("Ohh invalid input, please enter 'y' or 'n' according to your needs")
+                                    else:
+                                        break
+                                if dec_10=="y":
+                                    print("\nWould you like to have its lyrics as well?")
+                                    print("Press (Y/y) to continue")
+                                    while True:
+                                        dec_11=input("\nEnter your decision: ").lower()
+                                        if dec_11 not in ["y"]:
+                                            print("Ohh invalid input, please enter 'y'")
+                                        else:
+                                            break
+                                    if dec_11=="y":
+                                        print("\nThe lyrics of the selected song is: ")
+                                        slyrics_eng=slyrics_generation_2_eng(sname_eng)
+                                        print(slyrics_eng)
+                                elif dec_10=="n":
+                                    continue
+                            elif dec_9=="n":
+                                print("""Okay Great!!
+Exiting the program
+See you later👋""")
+                                break
+
+
                         elif dec8=="n":
                             print("\nOkay Great!! Would you like the program to choose another song for you?")
                             print("Press (Y/y) to continue or (N/n) to not continue")
@@ -344,6 +491,78 @@ See you later👋""")
                         if dec13=="y":
                             slyrics_mal=slyrics_generation_2_mal(sname_mal)
                             print(slyrics_mal)
+                            print("\nIs this song fine?")
+                            print("Press (Y/y) to confirm or (N/n) to generate again")
+                            while True:
+                                dec_13=input("\nEnter your decision: ").lower()
+                                if dec_13 not in ["y","n"]:
+                                    print("Ohh invalid input, please enter 'y' or 'n' according to your needs")
+                                else:
+                                    break
+
+
+                        if dec_13=="y":
+                            #Copy to Clipboard(Malayalam)
+                            print("\nDo you want the lyrics to be copied to your clipboard?")
+                            print("Press (Y/y) to continue or (N/n) to exit the program")
+                            while True:
+                                decision_1=input("\nEnter your decision: ").lower()
+                                if decision_1 not in ["y","n"]:
+                                    print("Ohh invalid input, please enter 'y' or 'n' according to your needs")
+                                else:
+                                    break
+                            if decision_1=="y":
+                                slyrics_mal_copy(slyrics_mal)
+                                print("Thank You for using the program😊")
+                                break
+                            elif decision_1=="n":
+                                print(""""\nExiting the program
+    See you later👋""")
+                                break   
+                        elif dec12=="n":
+                            continue
+
+                        elif dec_13=="n":
+                            print("\nOkay Great!! Would you like the program to choose another song for you?")
+                            print("Press (Y/y) to continue or (N/n) to not continue")
+                            while True:
+                                dec_14=input("\nEnter your decision: ").lower()
+                                if dec_14 not in ["y","n"]:
+                                    print("Ohh invalid input, please enter 'y' or 'n' according to your needs")
+                                else:
+                                    break
+                            if dec_14=="y":
+                                print("\nSelected song name is: ",sname_mal)
+                                print("\nIs this song fine?")
+                                print("Press (Y/y) to confirm or (N/n) to generate again")
+                                while True:
+                                    dec_15=input("\nEnter your decision: ").lower()
+                                    if dec_15 not in ["y","n"]:
+                                        print("Ohh invalid input, please enter 'y' or 'n' according to your needs")
+                                    else:
+                                        break
+                                if dec_15=="y":
+                                    print("\nWould you like to have its lyrics as well?")
+                                    print("Press (Y/y) to continue")
+                                    while True:
+                                        dec_16=input("\nEnter your decision: ").lower()
+                                        if dec_16 not in ["y"]:
+                                            print("Ohh invalid input, please enter 'y'")
+                                        else:
+                                            break
+                                    if dec_16=="y":
+                                        print("\nThe lyrics of the selected song is: ")
+                                        slyrics_mal=slyrics_generation_2_mal(sname_mal)
+                                        print(slyrics_mal)
+                                elif dec_15=="n":
+                                    continue
+                            elif dec_14=="n":
+                                print("""Okay Great!!
+Exiting the program
+See you later👋""")
+                                break
+
+
                         elif dec13=="n":
                             print("\nOkay Great!! Would you like the program to choose another song for you?")
                             print("Press (Y/y) to continue or (N/n) to not continue")
@@ -412,7 +631,7 @@ See you later👋""")
                     print("Press (Y/y) to confirm or (N/n) to generate again")
                     while True:
                         dec16=input("\nEnter your decision: ").lower()
-                        if dec17 not in ["y","n"]:
+                        if dec16 not in ["y","n"]:
                             print("Ohh invalid input, please enter 'y' or 'n' according to your needs")
                         else:
                             break
@@ -429,6 +648,77 @@ See you later👋""")
                             print("\nThe lyrics of the selected song is: ")
                             slyrics_hin=slyrics_generation_2_hin(sname_hin)
                             print(slyrics_hin)
+                            print("\nIs this song fine?")
+                            print("Press (Y/y) to confirm or (N/n) to generate again")
+                            while True:
+                                dec_17=input("\nEnter your decision: ").lower()
+                                if dec_17 not in ["y","n"]:
+                                    print("Ohh invalid input, please enter 'y' or 'n' according to your needs")
+                                else:
+                                    break
+
+
+                            if dec_17=="y":
+                                #Copy to Clipboard(Hindi)
+                                print("\nDo you want the lyrics to be copied to your clipboard?")
+                                print("Press (Y/y) to continue or (N/n) to exit the program")
+                                while True:
+                                    decision_1=input("\nEnter your decision: ").lower()
+                                    if decision_1 not in ["y","n"]:
+                                        print("Ohh invalid input, please enter 'y' or 'n' according to your needs")
+                                    else:
+                                        break
+                                if decision_1=="y":
+                                    slyrics_hin_copy(slyrics_hin)
+                                    print("Thank You for using the program😊")
+                                    break
+                                elif decision_1=="n":
+                                    print(""""\nExiting the program
+See you later👋""")
+                                    break
+
+
+                            elif dec_17=="n":
+                                print("\nOkay Great!! Would you like the program to choose another song for you?")
+                                print("Press (Y/y) to continue or (N/n) to not continue")
+                                while True:
+                                    dec_18=input("\nEnter your decision: ").lower()
+                                    if dec_18 not in ["y","n"]:
+                                        print("Ohh invalid input, please enter 'y' or 'n' according to your needs")
+                                    else:
+                                        break
+                                if dec_18=="y":
+                                    print("\nSelected song name is: ",sname_hin)
+                                    print("\nIs this song fine?")
+                                    print("Press (Y/y) to confirm or (N/n) to generate again")
+                                    while True:
+                                        dec_19=input("\nEnter your decision: ").lower()
+                                        if dec_19 not in ["y","n"]:
+                                            print("Ohh invalid input, please enter 'y' or 'n' according to your needs")
+                                        else:
+                                            break
+                                    if dec_19=="y":
+                                        print("\nWould you like to have its lyrics as well?")
+                                        print("Press (Y/y) to continue")
+                                        while True:
+                                            dec_20=input("\nEnter your decision: ").lower()
+                                            if dec_20 not in ["y"]:
+                                                print("Ohh invalid input, please enter 'y'")
+                                            else:
+                                                break
+                                        if dec_20=="y":
+                                            print("\nThe lyrics of the selected song is: ")
+                                            slyrics_hin=slyrics_generation_2_hin(sname_hin)
+                                            print(slyrics_hin)
+                                    elif dec_19=="n":
+                                        continue
+                                elif dec_18=="n":
+                                    print("""Okay Great!!
+    Exiting the program
+    See you later👋""")
+                                    break
+
+
                         elif dec17=="n":
                             print("\nOkay Great!! Would you like the program to choose another song for you?")
                             print("Press (Y/y) to continue or (N/n) to not continue")
