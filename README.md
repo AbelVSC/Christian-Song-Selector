@@ -13,7 +13,7 @@ I made this program because it allows me to select a song faster and save time c
 1. Make sure python is installed in your device. Any of the newer versions will work.
 2. Make sure to download the database file.
 3. Make sure that the modules mentioned above are installed. You can use ```pip install [module]``` command to install them. Just replace "[module]" with your desired module and put this command in the command prompt.
-4. The database file and the python script doesn't have to be in the same folder. Just make sure to give the file path of the database file in line 8 of the python script.
+4. The database file and the python script doesn't have to be in the same folder. Just make sure to give the file path of the database file in line 8 of the python script. Otherwise you can keep both of them in the same folder and put only the name of the database file in line 8 of the python script.
    ```python
    connection=sqlite3.connect("Database_File_path.db")
    ```
@@ -28,7 +28,7 @@ import random
 import pyperclip
 
 
-connection=sqlite3.connect("D:/A Personal Folders/Abel/Computer Science/Personal CS Projects/CHRISTIAN_SONGS_DB.db")
+connection=sqlite3.connect("Database_File_path.db")
 communication=connection.cursor()
 def sname_generation_1():  #Select song names from database
     communication.execute("SELECT SONG_NAME FROM CHRISTIAN_SONGS_TB")
