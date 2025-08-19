@@ -5,7 +5,7 @@ import random
 import pyperclip
 
 
-connection=sqlite3.connect("D:/A Personal Folders/Abel/Computer Science/Personal CS Projects/CHRISTIAN_SONGS_DB.db")
+connection=sqlite3.connect("Database_file_path.db")
 communication=connection.cursor()
 def sname_generation_1():  #Select song names from database
     communication.execute("SELECT SONG_NAME FROM CHRISTIAN_SONGS_TB")
@@ -782,3 +782,4 @@ See you later👋""")
             print("""\nExiting the program
 See you later👋""")
 connection.close()
+
