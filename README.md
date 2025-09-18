@@ -808,6 +808,6 @@ connection.close()
 ```
 
 # Optional Adjustments
-Currently the database has only 67 songs but you can use any another database with more songs and connect that to the script. Just make sure that the databse file is of sqlite. Also update the SQL commands in the script according to the columns of your table which is in the database file you wish to use. The updation must be done in the script for all the custom functions as all of them use SQL commands corresponding to the database I created.
+Currently the database has only 80 songs but you can use any another database with more songs and connect that to the script. Just make sure that the databse file is of sqlite. Also update the SQL commands in the script according to the columns of your table which is in the database file you wish to use. The updation must be done in the script for all the custom functions as all of them use SQL commands corresponding to the database I created.
 
 Otherwise you can add more songs in the database manually by using the necessary SQL commands.
